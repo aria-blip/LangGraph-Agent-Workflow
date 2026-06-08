@@ -17,6 +17,19 @@ Instead of manual data entry, the system uses a ReAct (Reasoning and Acting) loo
 ## Visuals
 [![Demo Video](https://img.shields.io/badge/🎥_Watch_Demo_Video-blue?style=for-the-badge)](INSERT_YOUR_VIDEO_LINK_HERE)
 
+## Agent Tools & Capabilities
+
+The agent is equipped with a specific set of Python functions (tools) that it can call autonomously based on the reasoning loop. It decides on its own which combination of tools is required to fulfill the user's prompt.
+
+**Document Processing Tools:**
+* `read_pdf_document(file_path)`: Extracts raw, unformatted text from uploaded PDF files for contextual analysis.
+* `highlight_pdf_text(file_path, search_terms)`: Takes a list of relevant terms, searches the PDF, highlights them in yellow, and returns a URL to download the newly generated document. It automatically stacks new highlights on top of existing ones.
+
+**Database Management Tools (SQLite):**
+* `check_inventory_db(part_name)`: Queries the database to retrieve current stock levels and unit prices for specific items.
+* `add_new_inventory_item(part_name, stock_level, price_per_unit)`: Inserts a completely new component into the database, including automated data type validation.
+* `update_inventory_db(part_name, quantity_change)`: Adjusts the stock level of existing items (e.g., adding incoming deliveries or subtracting consumed parts).
+* `delete_inventory_item(part_name)`: Removes an item completely from the enterprise database.
 
 ## Installation
 
