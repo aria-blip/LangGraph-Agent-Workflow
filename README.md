@@ -50,3 +50,7 @@ pip install -r requirements.txt
 # 4. Environment Variables
 cp .env.example .env
 # Open the .env file and add your GROQ_API_KEY
+
+# To use it 
+python -m uvicorn main:app --reload
+# Once the server is running, navigate to http://127.0.0.1:8000 in your web browser to access the frontend interface.
