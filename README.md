@@ -15,8 +15,7 @@ Instead of manual data entry, the system uses a ReAct (Reasoning and Acting) loo
 * **Persistent Memory:** Retains conversational context across the session using LangGraph's `MemorySaver`.
 
 ## Visuals
-[![Demo Video](https://img.shields.io/badge/🎥_Watch_Demo_Video-blue?style=for-the-badge)](INSERT_YOUR_VIDEO_LINK_HERE)
-
+![Demo](https://s13.gifyu.com/images/bIZK3.gif)
 ## Agent Tools & Capabilities
 
 The agent is equipped with a specific set of Python functions (tools) that it can call autonomously based on the reasoning loop. It decides on its own which combination of tools is required to fulfill the user's prompt.
